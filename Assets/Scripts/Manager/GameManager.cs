@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public enum GameState
 {
     LogIn,
+    CharacterSelect,
     Loading,
     Town,
     Dungeon,
@@ -22,7 +23,6 @@ public class GameManager : MonoBehaviour
     public PlayerManager playerManager;
     public UIManager uiManager;
     public SkillManager skillManager;
-    public ElementManager elementManager;
 
     [SerializeField] private GameObject playerPrefab;
     
@@ -53,6 +53,9 @@ public class GameManager : MonoBehaviour
         {
             case GameState.LogIn:
                 LoadScene("LoginScene");
+                break;
+            case GameState.CharacterSelect:
+                LoadScene("CharacterSelectScene");
                 break;
             case GameState.Loading:
                 LoadScene("LoadingScene");
@@ -95,6 +98,7 @@ public class GameManager : MonoBehaviour
             SetupPlayerReferences();
         }
     }
+    // Portal 사용시 이 메서드때문에 자꾸 플레이어 스폰위치 꼬이는것같음. 이후에 확인 필수 
     public void SpawnPlayer()
     {
         if (playerPrefab == null)
@@ -171,7 +175,6 @@ public class GameManager : MonoBehaviour
 
         controller.Init(
             stat,
-            FindAnyObjectByType<ElementManager>(),
             uiManager.skillInventory,
             uiManager.skillHUD
         );
@@ -182,7 +185,6 @@ public class GameManager : MonoBehaviour
         playerManager = FindAnyObjectByType<PlayerManager>();
         uiManager = FindAnyObjectByType<UIManager>();
         skillManager = FindAnyObjectByType<SkillManager>();
-        elementManager = FindAnyObjectByType<ElementManager>();
 
         Debug.Log("[GameManager] 매니저 자동 연결 완료");
 

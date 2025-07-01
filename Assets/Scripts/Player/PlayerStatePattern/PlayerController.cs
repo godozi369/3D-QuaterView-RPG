@@ -11,7 +11,6 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerStat stat;
-    [SerializeField] private ElementManager elementManager;
 
     [HideInInspector] public Animator animator;
     [HideInInspector] public NavMeshAgent agent;
@@ -35,9 +34,7 @@ public class PlayerController : MonoBehaviour
         stateMachine = GetComponent<PlayerStateMachine>();
         skillSystem = GetComponent<SkillSystem>();
 
-        if (elementManager == null)
-            elementManager = FindObjectOfType<ElementManager>();
-}
+    }
     private void Start()
     {
         stateMachine.ChangeState(new IdleState(this, stateMachine));
@@ -56,10 +53,9 @@ public class PlayerController : MonoBehaviour
     {
         inputAction.Disable();
     }
-    public void Init(PlayerStat stat, ElementManager elementMgr, SkillInventory skillInventory, SkillHUD hud)
+    public void Init(PlayerStat stat, SkillInventory skillInventory, SkillHUD hud)
     {
         this.stat = stat;
-        this.elementManager = elementMgr;
         this.skillInventory = skillInventory;
         this.skillHud = hud;
     }
@@ -142,27 +138,6 @@ public class PlayerController : MonoBehaviour
     public void RollAnim()
     {
         animator?.SetTrigger("Roll");
-    }
-
-    public ElementType GetCurrentElement() => currentElement;
-    public void ChangeElement(ElementType newElement)
-    {
-        if (currentElement == newElement) return;
-
-        if (elementManager == null)
-        {
-            Debug.LogError("ChangeElement() 실행 시 elementManager는 아직 null입니다.");
-            return;
-        }
-
-        elementManager.ChangeElement(this, newElement);
-
-        // 애니메이션 재생
-        //animator.SetTrigger("ChangeElement");
-
-
-        // 내부 스킬셋 및 HUD 갱신
-        //skillHud.UpdateSkillSlots();
     }
     private void OnSkillPerformed(InputAction.CallbackContext ctx)
     {
