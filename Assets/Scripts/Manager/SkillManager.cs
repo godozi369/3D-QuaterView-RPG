@@ -16,13 +16,20 @@ public class SkillManager : MonoBehaviour
     // 속성별 기본 공격 저장용
     private Dictionary<ElementType, int> basicAttackSkillMap = new();
 
-    private void Start()
+    private void Awake()
     {
-        RegisterBasicAttack(ElementType.Fire, 100);
-        RegisterBasicAttack(ElementType.Ice, 200);
-        RegisterBasicAttack(ElementType.Lightning, 300);
-        RegisterBasicAttack(ElementType.Earth, 400);
+        AutoRegisterBasicAttacks();
     }
+
+    private void AutoRegisterBasicAttacks()
+    {
+        foreach (var skill in allSkills)
+        {
+            if (skill.skillType == SkillType.BasicAttack )
+                RegisterBasicAttack(skill.elementType, skill.id);
+        }
+    }
+
     public void UnlockSkill(int skillId)
     {
         if (!GameManager.Instance.playerManager.stat.UseSkillPoint(1)) return;
