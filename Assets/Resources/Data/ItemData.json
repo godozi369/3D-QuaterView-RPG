@@ -1,0 +1,230 @@
+
+{
+    "items": [
+        {
+            "id": 1000,
+            "itemType": "Weapon",
+            "name": "낡은 지팡이",
+            "rarity": "Common",
+            "description": "만들어진지 꽤나 오래되보이는 지팡이다.",
+            "iconPath": "Icons/Items/Staff_Old",
+            "weaponStat": {
+                "weaponDamage": 8,
+                "weaponSpeed": 1
+            }
+        },
+        {
+            "id": 1001,
+            "itemType": "Weapon",
+            "name": "건전한 지팡이",
+            "rarity": "Rare",
+            "description": "건전해보이는 지팡이다.",
+            "iconPath": "Icons/Items/Staff_Gun",
+            "weaponStat": {
+                "weaponDamage": 12,
+                "weaponSpeed": 1
+            }
+        },
+        {
+            "id": 1002,
+            "itemType": "Weapon",
+            "name": "빙결 지팡이",
+            "rarity": "Epic",
+            "description": "서리가 서려있는 지팡이.",
+            "iconPath": "Icons/Items/Staff_Freeze",
+            "weaponStat": {
+                "weaponDamage": 20,
+                "weaponSpeed": 1
+            }
+        },
+        {
+            "id": 2000,
+            "itemType": "Armor",
+            "name": "초심자의 로브",
+            "rarity": "Common",
+            "description": "낡고 지저분한 로브",
+            "iconPath": "Icons/Items/Armor_Beginner",
+            "armorStat": {
+                "defense": 3
+            }
+        },
+        {
+            "id": 2001,
+            "itemType": "Armor",
+            "name": "유니틀로 로브",
+            "rarity": "Common",
+            "description": "가성비 좋은 로브",
+            "iconPath": "Icons/Items/Armor_Unitlero",
+            "armorStat": {
+                "defense": 6
+            }
+        },
+        {
+            "id": 2002,
+            "itemType": "Armor",
+            "name": "애국 로브",
+            "rarity": "Rare",
+            "description": "애국 로브",
+            "iconPath": "Icons/Items/Armor_Patriot",
+            "armorStat": {
+                "defense": 0
+            }
+        },
+        {
+            "id": 3000,
+            "itemType": "Consumable",
+            "name": "초심자의 체력 회복 물약",
+            "rarity": "Common",
+            "description": "초심자가 만든 체력 물약",
+            "iconPath": "Icons/Items/Potion_Beginner_Hp",
+            "effect": {
+                "type": 0,
+                "value": 50,
+                "cooldown": 5
+            }
+        },
+        {
+            "id": 3001,
+            "itemType": "Consumable",
+            "name": "초심자의 마나 회복 물약",
+            "rarity": "Common",
+            "description": "초심자가 만든 마나 물약",
+            "iconPath": "Icons/Items/Potion_Beginner_Mp",
+            "effect": {
+                "type": 1,
+                "value": 50,
+                "cooldown": 5
+            }
+        },
+        {
+            "id": 3002,
+            "itemType": "Consumable",
+            "name": "핫식스 레드 원액",
+            "rarity": "Rare",
+            "description": "타우린 1000mg이 함유된 핫식스 레드 원액",
+            "iconPath": "Icons/Items/Potion_Hotsix_Red",
+            "effect": {
+                "type": 0,
+                "value": 100,
+                "cooldown": 1
+            } 
+        },
+        {
+            "id": 3003,
+            "itemType": "Consumable",
+            "name": "핫식스 블루 원액",
+            "rarity": "Rare",
+            "description": "타우린 1000mg이 함유된 핫식스 블루 원액",
+            "iconPath": "Icons/Items/Potion_Hotsix_blue",
+            "effect": {
+                "type": 1,
+                "value": 100,
+                "cooldown": 1
+            } 
+        },
+        {
+            "id": 4000,
+            "itemType": "Material",
+            "name": "하급 화염 원석",
+            "rarity": "Common",
+            "description": "미약한 불의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Fire_Stone1",
+            "materialInfo": {
+                "element": "Fire",
+                "grade": "Low",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4001,
+            "itemType": "Material",
+            "name": "하급 빙결 원석",
+            "rarity": "Common",
+            "description": "미약한 얼음의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Ice_Stone1",
+            "materialInfo": {
+                "element": "Ice",
+                "grade": "Low",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4002,
+            "itemType": "Material",
+            "name": "하급 번개 원석",
+            "rarity": "Common",
+            "description": "미약한 번개의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Lightning_Stone1",
+            "materialInfo": {
+                "element": "Lightning",
+                "grade": "Low",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4003,
+            "itemType": "Material",
+            "name": "하급 대지 원석",
+            "rarity": "Common",
+            "description": "미약한 땅의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Fire_Stone1",
+            "materialInfo": {
+                "element": "Earth",
+                "grade": "Low",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4004,
+            "itemType": "Material",
+            "name": "중급 화염 원석",
+            "rarity": "Rare",
+            "description": "불의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Fire_Stone2",
+            "materialInfo": {
+                "element": "Fire",
+                "grade": "Mid",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4005,
+            "itemType": "Material",
+            "name": "중급 빙결 원석",
+            "rarity": "Rare",
+            "description": "얼음의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Ice_Stone2",
+            "materialInfo": {
+                "element": "Ice",
+                "grade": "Mid",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4006,
+            "itemType": "Material",
+            "name": "중급 번개 원석",
+            "rarity": "Rare",
+            "description": "번개의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Lightning_Stone2",
+            "materialInfo": {
+                "element": "Lightning",
+                "grade": "Mid",
+                "fusionValue": 1
+            } 
+        },
+        {
+            "id": 4007,
+            "itemType": "Material",
+            "name": "중급 대지 원석",
+            "rarity": "Rare",
+            "description": "땅의 기운이 느껴진다",
+            "iconPath": "Icons/Items/Material_Earth_Stone2",
+            "materialInfo": {
+                "element": "Earth",
+                "grade": "Mid",
+                "fusionValue": 1
+            } 
+        }
+    ]
+} 

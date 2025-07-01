@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0661c619228d34742bf65588fd130f91, type: 3}
+  m_Name: Roll
+  m_EditorClassIdentifier: 
+  id: 0
+  skillName: Roll
+  description: Roll
+  icon: {fileID: 0}
+  skillPrefab: {fileID: 0}
+  skillType: 3
+  elementType: 0
+  targetingType: 3
+  damage: 0
+  cooldown: 1.5
+  manaCost: 0
+  maxLevel: 6
+  requireLevel: 0
+  damageByLevel:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cooldownByLevel:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  manaCostByLevel:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  flashEffect: {fileID: 0}
+  hitEffect: {fileID: 0}
+  animationTrigger: Roll

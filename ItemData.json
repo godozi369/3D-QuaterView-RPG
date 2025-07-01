@@ -1,0 +1,85 @@
+﻿// 무기 0100 ~ 방어구 0200 ~ 소비 ~ 0300
+//  {
+//      "id": ,
+//      "type": "",
+//      "name": "",
+//      "description": "설명",
+//      "rarity": "Common",
+//      "power": ,
+//      "iconPath": "Icons/"
+//  },
+
+[
+    {
+        "id": 100,
+        "type": "Weapon",
+        "name": "돌검",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 10,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 101,
+        "type": "Weapon",
+        "name": "철검",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 15,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 102,
+        "type": "Weapon",
+        "name": "나무 활",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 10,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 200,
+        "type": "Armor",
+        "name": "천갑옷",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 3,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 201,
+        "type": "Armor",
+        "name": "철갑옷",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 6,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 202,
+        "type": "Armor",
+        "name": "앙모띠",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 12,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 300,
+        "type": "Comsumable",
+        "name": "체력 회복 구",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 10,
+        "iconPath": "Icons/"
+    },
+    {
+        "id": 301,
+        "type": "Comsumable",
+        "name": "마력 회복 구",
+        "description": "설명",
+        "rarity": "Common",
+        "power": 10,
+        "iconPath": "Icons/"
+    }
+]
