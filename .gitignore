@@ -100,3 +100,4 @@ InitTestScene*.unity*
 
 # asset files ignore
 /Assets/TempAssets/
+/Assets/Firebase/
